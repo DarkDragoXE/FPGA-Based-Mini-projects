@@ -5,14 +5,38 @@
 [![Verilog](https://img.shields.io/badge/Language-Verilog-blue.svg)](/)
 [![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20Artix--7-red.svg)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
 [![Vivado](https://img.shields.io/badge/Tool-Vivado%202024.1-orange.svg)](https://www.xilinx.com/products/design-tools/vivado.html)
-[![Board](https://img.shields.io/badge/Board-Basys--3-green.svg)](https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/)
-[![Projects](https://img.shields.io/badge/Projects-17-purple.svg)](/)
+[![Board](https://img.shields.io/badge/Board-Basys--3%20|%20Arty--A7-green.svg)](https://digilent.com/)
+[![NIELIT](https://img.shields.io/badge/NIELIT-Calicut-purple.svg)](/)
 
-**A collection of 17 digital design mini-projects implemented in Verilog HDL for the Basys-3 FPGA board**
+**A collection of 17 digital design mini-projects implemented in Verilog HDL for FPGA deployment**
 
-[Projects](#projects) | [Hardware](#hardware-setup) | [Demos](#demonstrations) | [Getting Started](#getting-started)
+[Projects](#projects) | [Hardware](#hardware-setup) | [Demos](#demonstrations) | [Getting Started](#getting-started) | [Author](#author)
 
 </div>
+
+---
+
+## About
+
+These projects were developed during the **FPGA Design Internship at NIELIT (National Institute of Electronics and Information Technology), Calicut** from May 2025 to July 2025. The internship focused on digital system prototyping using FPGAs with hands-on training in Verilog HDL implementation.
+
+| | |
+|---|---|
+| **Institution** | NIELIT Calicut |
+| **Duration** | May 2025 - July 2025 |
+| **Role** | FPGA Design Intern |
+| **Boards** | Basys-3, Arty A7 |
+| **Tools** | Vivado, ModelSim |
+
+### Key Learning Outcomes
+
+- Developed and tested digital designs on **Arty A7** and **Basys 3** FPGAs using Verilog HDL
+- Built modules like priority encoders, 8-bit FIFO, matrix multipliers, and FIR filters
+- Performed waveform analysis using **ILA (Integrated Logic Analyzer)** and **VIO (Virtual I/O)**
+- Wrote self-checking testbenches and XDC constraints
+- Implemented debouncing and CDC (Clock Domain Crossing) where needed
+- Closed timing at **100 MHz** on Basys 3/Arty A7
+- Verified designs on hardware with **UART prints** alongside ILA/VIO
 
 ---
 
@@ -23,7 +47,7 @@ This repository contains a comprehensive collection of FPGA mini-projects design
 <div align="center">
 <img src="images/basys3_demo.jpeg" alt="Basys-3 FPGA Demo" width="500"/>
 
-*Basys-3 FPGA board running 7-segment display project (Basic Calculator)*
+*Basys-3 FPGA board running 7-segment display project*
 </div>
 
 ---
@@ -83,7 +107,7 @@ This repository contains a comprehensive collection of FPGA mini-projects design
 
 | Component | Specification |
 |-----------|---------------|
-| **FPGA Board** | Digilent Basys-3 |
+| **FPGA Boards** | Digilent Basys-3, Digilent Arty A7 |
 | **FPGA Chip** | Xilinx Artix-7 (XC7A35T-1CPG236C) |
 | **Clock** | 100 MHz onboard oscillator |
 | **Switches** | 16 slide switches for input |
@@ -111,7 +135,8 @@ Video demonstrations of the projects running on hardware:
 ### Prerequisites
 
 - **Xilinx Vivado** 2023.x or later
-- **Digilent Basys-3** FPGA board (for hardware testing)
+- **ModelSim** (for simulation)
+- **Digilent Basys-3** or **Arty A7** FPGA board (for hardware testing)
 
 ### Opening Projects
 
@@ -163,6 +188,7 @@ FPGA-Based-Mini-projects/
 | **Arithmetic** | Binary Addition, Multiplication, ALU Design |
 | **Signal Processing** | FIR Filtering, Digital Signal Processing |
 | **I/O Interfacing** | 7-Segment Display, PWM, LED Control |
+| **Debugging** | ILA, VIO, UART verification |
 | **Applications** | Security Systems, Traffic Controllers |
 
 ---
@@ -172,16 +198,39 @@ FPGA-Based-Mini-projects/
 | Tool | Version | Purpose |
 |------|---------|---------|
 | **Xilinx Vivado** | 2024.1 | Synthesis, Implementation, Simulation |
+| **ModelSim** | - | Behavioral Simulation |
 | **Verilog HDL** | IEEE 1364-2005 | Hardware Description |
-| **Basys-3 Board Files** | Latest | Constraint files and pin mapping |
+| **Basys-3/Arty A7 Board Files** | Latest | Constraint files and pin mapping |
+
+---
+
+## Verification Methodology
+
+- **Self-checking testbenches** for automated verification
+- **XDC constraints** for proper pin mapping and timing
+- **Debouncing** for button inputs
+- **CDC (Clock Domain Crossing)** handling where needed
+- **ILA/VIO** for on-chip debugging
+- **UART prints** for hardware verification
+- **Timing closure** at 100 MHz
 
 ---
 
 ## Author
 
-**Debtonu Bose**  
-Electronics and Communication Engineering  
-VIT University
+**Debtonu Bose**
+B.Tech Electronics and Communication Engineering
+Vellore Institute of Technology (2021-2025)
+
+[![GitHub](https://img.shields.io/badge/GitHub-DarkDragoXE-black?logo=github)](https://github.com/DarkDragoXE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-debtonu--bose-blue?logo=linkedin)](https://linkedin.com/in/debtonu-bose)
+
+---
+
+## Acknowledgments
+
+- **NIELIT Calicut** for providing FPGA training and lab resources
+- Digital System Prototyping using FPGAs certification (May 2025)
 
 ---
 
@@ -197,6 +246,6 @@ VIT University
 
 <div align="center">
 
-**Learning digital design one gate at a time**
+**FPGA Design | NIELIT Calicut | Verilog HDL**
 
 </div>
