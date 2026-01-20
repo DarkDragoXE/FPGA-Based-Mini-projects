@@ -23,7 +23,7 @@ This repository contains a comprehensive collection of FPGA mini-projects design
 <div align="center">
 <img src="images/basys3_demo.jpeg" alt="Basys-3 FPGA Demo" width="500"/>
 
-*Basys-3 FPGA board running 7-segment display project*
+*Basys-3 FPGA board running 7-segment display project (Basic Calculator)*
 </div>
 
 ---
